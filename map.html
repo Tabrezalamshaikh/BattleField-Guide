@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>tutorial</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <a class="navbar-brand" href="/home.html">BattelField Guide</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/vehicle.html">Vehicle Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Character.html">Character Info</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/map.html">Map Info</a>
+                </li>
+                <li class="nav-item" style="margin-left: 50px;">
+                    <button type="button" class="btn btn-outline-info" data-toggle="modal"
+                        data-target="#loginBackdrop">Login</button>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#signupBackdrop">Sign up</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class=" modal fade" id="loginBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="loginBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Login to site</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your
+                                email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="signupBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="signupBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Sign up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" my-4 bg-dark">
+        <div class="row featurette d-flex " style="margin-top: -25px;">
+            <div class="col-md-7" style=" color: white;">
+                <h2 class="featurette-heading" style="color: #5656fa;">Vikendi
+                </h2>
+                <p class="lead">1. Setting: It is distinct for its extensive winter environment, featuring deep snow,
+                    icy
+                    terrain, and frozen lakes, which significantly impacts gameplay and player visibility.</p>
+
+                <p class="lead">2. Size & Scale: The map is reasonably sized, featuring a scale bar that shows the main
+                    island is several kilometers across.</p>
+
+                <p class="lead">3. Key Locations: Major named areas are scattered across the map, including popular drop
+                    zones like School, Cosmodrome, Castle, and coastal towns.</p>
+
+                <p class="lead">4. Named Cities/Areas: Prominent locations include Sanshok in the north, El Pozo and
+                    Ebnéd in the west,
+                    Saanovska and Nove puye in the south, and Georgopole (split into Georgopol I and II) in the
+                    northeast.</p>
+
+                <p class="lead">5. Central Features: The map's center is characterized by mountainous terrain and is
+                    home to the School and
+                    Cashuk areas.</p>
+
+                <p class="lead">6. Waterways: A river or strait cuts through the lower central section, connecting to
+                    the coast and
+                    separating the main landmass.</p>
+
+                <p class="lead">7. Strategic Points: The large, flat area around School and the high-loot buildings near
+                    Cosmodrome are
+                    crucial for early-game engagements.</p>
+
+                <p class="lead">8. Tactical Gameplay: The open, snowy fields favor long-range engagements, while the
+                    dense forests and
+                    urban centers offer opportunities for close-quarters combat.</p>
+
+                <p class="lead">9. Vehicles: Vehicles are essential for traversing the vast, slippery landscape, though
+                    snowmobiles are
+                    often preferred for mobility.</p>
+
+                <p class="lead">10. Unique Features: The snow cover can reveal footprints, adding a unique tracking
+                    element to the gameplay.</p>
+
+                <p class="lead">11. Loot Distribution: Loot appears to be concentrated in the larger settlements, marked
+                    by clusters of
+                    buildings.</p>
+
+                <p class="lead">12. Compass & Grid: The map includes a compass rose (N, E, S, W) and a basic grid
+                    structure for navigation
+                    and communication.</p>
+
+                <p class="lead">13. Distinct Look: The overall aesthetic is one of rugged, remote, and cold wilderness.
+                </p>
+
+
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    src="vikendi.png" alt="">
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center" style="margin-top: 20px;">
+            <div class="col-md-7 order-md-2" style="color: greenyellow;">
+                <h2 class="featurette-heading" style="color: #5656fa;">Erangal
+                </h2>
+                <p class="lead">Size and Theme: It is a large, 8x8 km map characterized by its lush, temperate, and
+                    forested environment, set on a fictional Russian island.</p>
+
+                <p class="lead">1. Terrain Diversity: The map offers a great variety of terrain, including large open
+                    fields, rolling
+                    hills, dense forests, and numerous urban areas.</p>
+
+                <p class="lead">2. Key Locations: Several highly contested and popular drop zones are visible, such as
+                    Pochinki, the
+                    School, Rozhok, and the Sosnovka Military Base.</p>
+
+                <p class="lead">3. Urban Hubs: Pochinki is centrally located and infamous for early-game close-quarters
+                    combat (CQC)
+                    due to its dense cluster of buildings.</p>
+
+                <p class="lead">4. High-Loot Zones: The Military Base (on the separate southern island) is a high-risk,
+                    high-reward
+                    area, known for spawning the best loot and armor.</p>
+
+                <p class="lead">5. Bridges and Strategy: Access to the Military Base is restricted by two main bridges,
+                    which are
+                    common choke points and critical for end-game rotation strategies.</p>
+
+                <p class="lead">6. Geographical Features: The map features a large mainland and a smaller Sosnovka
+                    Island in the south,
+                    separated by a sea channel.</p>
+
+                <p class="lead">7. Centrality: Locations like Rozhok and the School are near the map's center, making
+                    them
+                    strategically important as the safe zone often closes around them.</p>
+
+                <p class="lead">8. Vehicle Importance: Due to the 8x8 km size, vehicles are essential for crossing long
+                    distances and
+                    escaping the blue zone.</p>
+
+                <p class="lead"> 9. Coastal Areas: Towns like Georgopol and Novorepnoye are on the coast, often
+                    providing access to
+                    boats for rotation.</p>
+
+                <p class="lead">10. Gameplay Mix: Erangel supports all styles of play, from aggressive urban fighting to
+                    tactical
+                    sniping across open fields.</p>
+
+                <p class="lead">11.Iconic Landmarks: Other notable points include Gartach and the scattered settlements
+                    of Sosnovka (on
+                    the main island).</p>
+
+                <p class="lead">12. Overall Vibe: The map has a gritty, post-Soviet atmosphere with abandoned facilities
+                    and barracks,
+                    reflecting its fictional backstory.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    src="erengal.png" alt="">
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center" style="margin-top: 20px;">
+            <div class="col-md-7" style=" color: burlywood;" >
+                <h2 class="featurette-heading" style="color: #5656fa;">Miramar.
+                </h2>
+                <p class="lead">1. Setting and Scale: It is a large, 8x8 km map, defined by its desert theme, featuring
+                    brown, sandy
+                    terrain, canyons, and rocky hills.</p>
+
+                <p class="lead">2. Open Terrain: The map is characterized by much more open ground compared to Erangel,
+                    which favors
+                    long-range engagements and sniping.</p>
+
+                <p class="lead">3. Key Locations: Major, densely packed urban centers include Los Leones (the largest
+                    city), El Pozo, and
+                    Pecado, which are known for high-risk, high-reward drops.</p>
+
+                <p class="lead">4. Unique Structures: The map features many multi-story buildings, warehouses, and the
+                    iconic Casino and
+                    Boxing Arena in Pecado.</p>
+
+                <p class="lead">5. Strategic Challenge: The open terrain makes rotation difficult, as players are
+                    often exposed and
+                    vulnerable to enemy fire from high ground.</p>
+
+                <p class="lead">6. Topography: The map is very hilly and mountainous, especially in the central and
+                    western regions,
+                    providing excellent vantage points for snipers.</p>
+
+                <p class="lead">7. Vehicle Necessity: Vehicles are absolutely critical for survival and timely
+                    rotations due to the map's
+                    sheer size and the lack of cover in open areas.</p>
+
+                <p class="lead">8. Naming Convention: Unlike the previous maps, Miramar uses Spanish-themed names for
+                    its locations, such
+                    as Los Hones and El Pozo.</p>
+
+                <p class="lead">9. Loot Distribution: Loot is heavily concentrated within the major cities, leading to
+                    chaotic early-game
+                    fights.</p>
+
+                <p class="lead">10. Coastal Areas: Coastal towns like Noverpnoye and the port areas offer alternative
+                    ways to move around
+                    the map.</p>
+
+                <p class="lead">11. Tactical Considerations: The lack of lush foliage means camouflage is minimal,
+                    forcing players to rely
+                    on terrain elevation and structures for cover.</p>
+
+                <p class="lead">12. Gameplay Focus: Miramar shifts the game's focus towards strategic positioning and
+                    vehicle management
+                    rather than constant close-quarters combat.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    src="miramar.png" alt="">
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2" style="color: green;">
+                <h2 class="featurette-heading" style="color: #5656fa;">Erangel Remastered.
+                </h2>
+                <p class="lead">1. Theme: It retains the lush, green, temperate island theme, similar to the original
+                    Erangel, with dense
+                    forests and grassy fields.</p>
+
+                <p class="lead">2. Scale: The map maintains the large 8x8 km scale, evident from the scale bar at the
+                    bottom left,
+                    requiring significant travel time.</p>
+
+                <p class="lead">3. Hybrid Locations: It strategically mixes classic Erangel locations like School, Rozhok,
+                    Military Base,
+                    and Georgopol with areas named after other maps, such as Sanshok and El Pozo.</p>
+
+                <p class="lead">4. New Hot Drop: A notable addition is Paverdise Resort in the west, suggesting a
+                    high-loot,
+                    high-engagement area, potentially replacing or updating an older location.</p>
+
+                <p class="lead">5. Central Features: The School and Rozhok remain centrally located, making them critical
+                    for early-game
+                    action and subsequent zone rotations.</p>
+
+                <p class="lead">6. Southern Island: The separate southern island, featuring Sosnovska and the Military
+                    Base, is still a
+                    major high-tier loot zone.</p>
+
+                <p class="lead">7. Choke Points: The bridges connecting the main island to the Military Base remain the
+                    primary choke
+                    points for mid-to-late-game strategy.</p>
+
+                <p class="lead">8. Terrain: The terrain is varied, encompassing flat plains near Saanovska, mountainous
+                    areas near El Pozo,
+                    and coastal regions like Gartach.</p>
+
+                <p class="lead">9. Waterways: A river system flows through the center, adding tactical elements for
+                    crossing and providing
+                    limited cover.</p>
+
+                <p class="lead">10. Visual Update: The map generally has a brighter and more detailed visual style than the
+                    very first
+                    iteration of Erangel.</p>
+
+                <p class="lead">11. Loot & Action: The inclusion of multiple dense urban areas ensures a wide distribution
+                    of loot and
+                    continuous combat opportunities.</p>
+
+                <p class="lead">12. Gameplay Impact: The changes likely aim to refresh the gameplay experience, offering
+                    veteran players new
+                    drop strategies while keeping the classic Erangel feel.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    src="remastred.png" alt="">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer class="blog-footer container text-center">
+        <p>Website Made By <a
+                href="https://www.instagram.com/rizwaan._21/?utm_source=ig_web_button_share_sheet">Rizwan</a> by <a
+                href="https://www.instagram.com/rizwaan._21/?utm_source=ig_web_button_share_sheet">Vs Code</a>.
+        </p>
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

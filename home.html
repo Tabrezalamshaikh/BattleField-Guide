@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>tutorial</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <a class="navbar-brand" href="/home.html">BattelField Guide</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/vehicle.html">Vehicle Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Character.html">Character Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/map.html">Map Info</a>
+                </li>
+                <li class="nav-item" style="margin-left: 50px;">
+                    <button type="button" class="btn btn-outline-info" data-toggle="modal"
+                        data-target="#loginBackdrop">Login</button>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#signupBackdrop">Sign up</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Modal -->
+<div class=" modal fade" id="loginBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                        aria-labelledby="loginBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Login to site</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your
+                                                email with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="signupBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="signupBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Sign up</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone
+                                    else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group">
+                                <label for="cexampleInputPassword1">Confirm Password</label>
+                                <input type="password" class="form-control" id="cexampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="thumb1.png" class="d-block w-100" alt="..." height="850px">
+                </div>
+                <div class="carousel-item">
+                    <img src="thumb2.png" class="d-block w-100" alt="..." height="850px">
+                </div>
+                <div class="carousel-item">
+                    <img src="thumb3.png" class="d-block w-100" alt="..." height="850px">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <section class=" text-center bg-dark">
+            <div class="container">
+                <h1>Tutorial</h1>
+                <p class="lead text-muted">🍗 PUBG: From Plane to Chicken Dinner (The Survival Guide)
+                    The core gameplay loop of PUBG (PlayerUnknown's Battlegrounds) revolves around survival and being
+                    the
+                    last player or team standing out of 100 competitors.</p>
+
+                <p class="lead text-muted"> 🛫 Phase 1: The Drop and Scramble (Looting)<br>
+                    1.The Plane Jump: 100 players start the match with no gear and parachute out of a plane onto a
+                    massive
+                    map. You must quickly decide your landing spot (Drop Zone)—a high-risk, high-reward area like a
+                    city, or
+                    a safer, more isolated location.<br>
+
+                    2.Scavenging (Looting): Immediately upon landing, the first priority is to find weapons, ammo, armor
+                    (helmets and vests), and healing supplies (medkits and bandages). This phase is crucial and involves
+                    searching houses, shacks, and buildings.<br>
+
+                    🛡️ Phase 2: Staying Alive and Maneuvering (The Circle)<br>
+                    1.Tracking the Safe Zone (White Circle): The map features a White Circle which defines the safe play
+                    area.
+                    This circle shrinks periodically, forcing players closer together. Your primary objective is to
+                    constantly move toward and stay inside this safe zone.<br>
+
+                    2.Avoiding the Blue Zone: The area outside the White Circle is the Blue Zone. Any player caught in
+                    the
+                    Blue Zone will take continuous damage. The damage intensifies as the game progresses, making the
+                    Blue
+                    Zone a hard boundary that guides players' movement.<br>
+
+                    3.Rotation and Travel: Since the map is large, players must find vehicles (like the Buggy, UAZ, or
+                    Dacia)
+                    to traverse distances quickly and stay ahead of the shrinking safe zone.</p>
+
+                <p class="lead text-muted"> 💥 Phase 3: Engagements and Strategy (The Mid-Game)<br>
+                    1.Combat (Engaging): As the safe zone shrinks, player density increases, leading to more frequent
+                    fights.
+                    You must use tactical cover, choose whether to snipe, flank, or rush enemies, and utilize different
+                    terrains to your advantage.<br>
+
+                    2.Airdrops: Planes occasionally drop special Care Packages that contain powerful, rare weapons (like
+                    the
+                    AWM sniper or Level 3 gear). Securing these is often high-risk but provides a significant
+                    advantage.<br>
+
+                    3.Positional Play: Strategic positioning becomes vital. Securing high ground or finding good natural
+                    cover
+                    (rocks, trees, buildings) is essential for surviving the mid-to-late game.</p>
+
+                <p class="lead text-muted"> 🏆 Phase 4: The Final Showdown (Victory)<br>
+                    1.The Final Circle: The safe zone becomes extremely small, pushing the few remaining players into a
+                    confined area. This is the most intense, high-stakes part of the game.<br>
+
+                    2.Last Man/Team Standing: Players fight fiercely until all opposing players or teams are
+                    eliminated.<br>
+
+                    3.Chicken Dinner: The last surviving player or team wins the match and is rewarded with the iconic
+                    phrase:
+                    "WINNER WINNER CHICKEN DINNER!"</p><br>
+                <p>
+                    <a href="/vehicle.html" class="btn btn-primary my-2">Vehicle</a>
+                    <a href="/Character.html" class="btn btn-secondary my-2">Charecter</a>
+                </p>
+            </div>
+        </section>
+        <hr>
+        <footer class="blog-footer container text-center">
+            <p>Website Made By <a
+                    href="https://www.instagram.com/rizwaan._21/?utm_source=ig_web_button_share_sheet">Rizwan</a> by <a
+                    href="https://www.instagram.com/rizwaan._21/?utm_source=ig_web_button_share_sheet">Vs Code</a>.
+            </p>
+            <p>
+                <a href="#">Back to top</a>
+            </p>
+        </footer>
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
